@@ -1,0 +1,160 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    display: none;
+    flex-direction: column;
+    width: max-content;
+}
+
+form input{
+    background: whitesmoke;
+    border: none;
+    padding: .5rem;
+    margin: .25rem 0;
+    border-radius: .25rem;
+}
+
+form button{
+    background: royalblue;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    margin: .5rem 0;
+    border-radius: .25rem;
+    cursor: pointer;
+    box-shadow: 0 0 5px gray;
+}
+
+.heading{
+    padding: 1rem 0;
+    border-bottom: 1px solid royalblue;
+    margin-bottom: 1rem;
+}
+
+.heading p{
+    width: 100%;
+}
+
+.hr{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: .1rem;
+    background: rgba(65, 105, 225, 0.25);
+}
+
+header{
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+section{
+    padding: 1rem 2.5rem;
+    justify-content: space-between;
+    display: flex;
+}
+
+.row {
+    display: flex;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.table{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    width: max-content;
+    margin: .5rem 0;
+}
+
+.table .table-col:not(:last-child){
+    border-right: 1px solid rgba(65, 105, 225, 0.5);
+}
+
+.table-col{
+    overflow-x: auto;
+}
+
+.table .table-col h4{
+    padding: 1rem;
+    background: royalblue;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+.table .table-col p{
+    padding: 1rem;
+}
+
+.date{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    place-items: center;
+}
+
+.time div{
+    font-size: 2rem;
+    color: royalblue;
+}
+
+.timeline{
+    color: rgba(65, 105, 225, 0.8);
+    margin-bottom: .5rem;
+}
+
+.dito{
+    margin: 0 .25rem;
+}
+
+.month {
+    margin-right: .25rem;
+}
+
+.days p{
+    color: royalblue;
+    background: whitesmoke;
+    margin: 0 .25rem;
+    padding: .25rem;
+    border-radius: .25rem;
+    height: max-content;
+}
+
+.slots{
+    margin: 1rem;
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.slot{
+    padding: .5rem;
+    background: white;
+    height: 10rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    border-radius: .5rem;
+    overflow: auto;
+}
+
+.slot p{
+    color: royalblue;
+}
+
+.slot h3{
+    color: royalblue;
+}
+
+@media screen and (max-width: 760px){
+    section{
+        flex-direction: column;
+        padding: 1rem;
+    }
+}

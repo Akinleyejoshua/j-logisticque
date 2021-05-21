@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation Queue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h3>Logistic Transportation Queue</h3>
+    </header>
+    <section>
+        <div class="left">
+            <div class="heading row">
+                <p>Delivery for Customers</p>
+            </div>
+            <form method="dialog">
+                <input type="text" class="c-id" placeholder="Your ID">
+                <input type="text" class="c-name" placeholder="Your Name">
+                <input type="text" class="c-pl" placeholder="Pick Up Location">
+                <input type="text" class="c-dl" placeholder="Drop Off Location">
+                <button class="submit">Submit</button>
+            </form>
+            <div class="table">
+                <div class="row table-row">
+                    <div class="col table-col" id="customer-id">
+                        <h4>Customer ID</h4>
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                    </div>
+                    <div class="col table-col" id="customer-name">
+                        <h4>Customer Name</h4>
+                        <p>Akinleye Joshua</p>
+                        <p>John Mark</p>
+                        <p>Esther James</p>
+                    </div>
+                    <div class="col table-col" id="pick-up-location">
+                        <h4>Pick Up Locations</h4>
+                        <p>Ikeja</p>
+                        <p>Opic Estate, Ogun State</p>
+                        <p>Ibafo, Ogun State</p>
+                    </div>
+                    <div class="col table-col" id="drop-off-location">
+                        <h4>Drop Off Location</h4>
+                        <p>Victoria Highland</p>
+                        <p>Ojodu, Ikeja Lagos State</p>
+                        <p>Lekki Phase 1, Lagos State</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="heading row">
+                <p>Planner</p>
+            </div>
+            <div class="date">
+                <div class="time row">
+                    <div class="hrs"></div>
+                    <div class="dito">:</div>
+                    <div class="min"></div>
+                    <div class="dito">:</div>
+                    <div class="sec"></div>
+                </div>
+                <div class="row timeline">
+                    <div class="day"></div>
+                    <div class="month"></div>
+                    <div class="day-date"></div>
+                    <div class="year"></div>
+                </div>
+            </div>
+            <div class="days row">
+            </div>
+            <div class="slots">
+                <div class="slot">
+                    <h3>Slot 1</h3>
+                </div>
+                <div class="slot">
+                    <h3>Slot 2</h3>
+                </div>
+                <div class="slot">
+                    <h3>Slot 3</h3>
+                </div>
+                <div class="slot">
+                    <h3>Slot 4</h3>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
